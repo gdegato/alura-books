@@ -1,8 +1,8 @@
 import React from 'react'
+import './styles.css'
 import perfil from '../../imagens/perfil.svg';
 import sacola from '../../imagens/sacola.svg';
 
-import './styles.css'
 
 function IconesHeader() {
 
