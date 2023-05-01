@@ -1,7 +1,6 @@
 import React from 'react'
-import Header from './components/Header';
-import Pesquisa from './components/Pesquisa';
-import UltimosLancamentos from './components/UltimosLancamentos';
+import Pesquisa from '../components/Pesquisa';
+import UltimosLancamentos from '../components/UltimosLancamentos';
 
 import styled from 'styled-components';
 
@@ -11,15 +10,13 @@ const AppContainer = styled.div`
     background-image: linear-gradient(90deg, #002F52 35%, #326589);  
 `
 
-function App() {
+function Favoritos() {
 
   return (
     <AppContainer>
-      <Header />
-      <Pesquisa />
-      <UltimosLancamentos />
+      <Pesquisa />    
     </AppContainer>
   );
 }
 
-export default App;
+export default Favoritos;
