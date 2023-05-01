@@ -41,10 +41,8 @@ const Titulo = styled.h2`
    padding-top: 35px
 `
 function Favoritos() {
+
   const [favoritos, setFavoritos] = useState([])
-  useEffect(() => {
-    fetchFavoritos()
-  }, [])
 
   async function fetchFavoritos() {
     const favoritosDaAPI = await getFavoritos()
@@ -57,6 +55,9 @@ function Favoritos() {
     alert(`Livro de id: ${id} desfavoritado`)
   }
 
+  useEffect(() => {
+    fetchFavoritos()
+  }, [])
 
   return (
     <AppContainer>
